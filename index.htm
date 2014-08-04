@@ -34,7 +34,7 @@
 	});
 
 	function hideAllThem(){
-		$(".showMe").each(function(i){
+		$('.myContent').each(function(i){
 			$(this).hide();
 		});
 	}
@@ -46,10 +46,11 @@
 		<ul>
 			<li class="show_my_cut" name="cut">Sublime Text快捷键</li>
 			<li class="show_my_cut" name="xcode">Xcode快捷键</li>
+			<li class="show_my_cut" name="mac">Mac快捷键</li>
 		</ul>
 	</div>
   	<div class="col-md-10">
-		<div id="cut_content" class="showMe">
+		<div id="cut_content" class="showMe myContent">
 			<h2>选择类</h2>
 			<ul>
 				<li><strong>Ctrl+D</strong>： 选中光标所占的文本，继续操作则会选中下一个相同的文本。</li>
@@ -121,8 +122,11 @@
 				<li><strong>Ctrl+K+B</strong>：  开启/关闭侧边栏。</li>
 			</ul>
 		</div>
-		<div>
+		<div class="hideMe myContent" id="mac_content">
 			<img src="./images/dashkard-macosx-general.png" />
+		</div>
+		<div class="hideMe myContent" id="xcode_content">
+			<img src="./images/XcodeShortcuts B_W.png" />
 		</div>
   	</div>
 </div>
